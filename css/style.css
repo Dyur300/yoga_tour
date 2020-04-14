@@ -397,15 +397,36 @@ body {
   padding: 80px 0;
 }
 
+@media (max-width: 480px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
 .title {
   font-family: 'Muller Medium', sans-serif;
   font-size: 36px;
   text-align: center;
   background-image: url("../img/interface/title-under-line.png");
   background-position-x: center;
-  background-position-y: 80px;
+  background-position-y: 60px;
   background-repeat: no-repeat;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+@media (max-width: 537px) {
+  .title {
+    font-size: 30px;
+    background-position-y: 52px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    background-position-y: 80px;
+  }
 }
 
 .header {
@@ -597,6 +618,7 @@ body {
 .yoga-description__text {
   padding: 15px 0 60px 0;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .yoga-description__services-item {
@@ -650,6 +672,88 @@ body {
   }
   .yoga-description__image {
     width: 100%;
+  }
+}
+
+.causes {
+  padding: 80px 0 35px 0;
+}
+
+.causes-wrap {
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.causes-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+.causes__item {
+  margin-bottom: 45px;
+}
+
+.causes__image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.causes__description {
+  font-family: 'Muller Medium', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 23px;
+}
+
+@media (max-width: 910px) {
+  .causes__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .causes {
+    padding: 50px 0 5px 0;
+  }
+  .causes-wrap {
+    padding-top: 60px;
+  }
+  .causes__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
