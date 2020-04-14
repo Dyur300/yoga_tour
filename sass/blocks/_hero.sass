@@ -9,7 +9,7 @@
     margin-top: 180px
   &__subtitle
     +medium
-    font-size: 20px;
+    font-size: 20px
     text-transform: uppercase
     margin-bottom: 15px
   &__adress
@@ -29,6 +29,8 @@
       background-color: #db883c
       cursor: pointer
       border-color: #db883c
+  &__social-links
+    padding-bottom: 20px
 .social
   &-links
     display: flex
@@ -47,4 +49,19 @@
         cursor: pointer
         border-color: #db883c
       
+@media(max-width: 1024px)
+  .hero 
+    &__title
+      font-size: 40px
+      margin-bottom: 40px
+      margin-top: 100px
+    &__subtitle
+      font-size: 18px
+    &__adress
+      font-size: 14px
+    &__request-btn
+      font-size: 16px
+      padding: 10px 30px
+      margin-top: 50px
+      margin-bottom: 80px
       
