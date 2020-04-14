@@ -384,6 +384,30 @@ template {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muller Regular', sans-serif;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.title {
+  font-family: 'Muller Medium', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  background-image: url("../img/interface/title-under-line.png");
+  background-position-x: center;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+
 .header {
   background: url("../img/header/header-bg.jpg") no-repeat center;
   background-size: cover;
@@ -481,7 +505,7 @@ template {
 }
 
 .hero__social-links {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .social-links {
@@ -533,6 +557,99 @@ template {
     padding: 10px 30px;
     margin-top: 50px;
     margin-bottom: 80px;
+  }
+}
+
+.yoga-description {
+  padding: 50px 0;
+  background-color: #f8f2e4;
+}
+
+.yoga-description-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.yoga-description__body {
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+  padding-left: 85px;
+}
+
+.yoga-description__title {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.yoga-description__title .uppercase {
+  text-transform: uppercase;
+  font-family: 'Muller Medium', sans-serif;
+  font-size: 40px;
+}
+
+.yoga-description__text {
+  padding: 15px 0 60px 0;
+  font-size: 16px;
+}
+
+.yoga-description__services-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.yoga-description__icon {
+  margin-bottom: 5px;
+}
+
+.yoga-description__subtitle {
+  padding-left: 20px;
+  text-transform: uppercase;
+  line-height: 0px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .yoga-description-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .yoga-description__body {
+    -ms-flex-preferred-size: 600px;
+        flex-basis: 600px;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .yoga-description__title {
+    line-height: 40px;
+    font-size: 22px;
+  }
+  .yoga-description__title .uppercase {
+    font-size: 30px;
+  }
+  .yoga-description__text {
+    padding: 0px 0 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .yoga-description__image-box {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .yoga-description__image {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
