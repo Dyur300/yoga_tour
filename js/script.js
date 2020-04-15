@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.expectation-slider').slick({
+  $('.big-slider').slick({
     arrows: false,
     infiniti: true,
     variableWidth: true,

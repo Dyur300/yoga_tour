@@ -1,6 +1,7 @@
-.expectation
+.programme, .expectation
   position: relative
   padding-bottom: 0
+.big-slider
   &-bg-color
     position: absolute
     top: 0
@@ -12,6 +13,7 @@
   &-wrap
     max-width: 1920px
     margin: 0 auto
+.big
   &-slider
     display: flex
     justify-content: center
@@ -47,57 +49,57 @@
       +medium
       font-size: 26px
       text-transform: uppercase
-  &__text
-    font-size: 18px
-    line-height: 25px
-    max-width: 400px
-  &__image
-    max-width: 100%
-    max-height: 100%
-    transition: 0.3s all ease
-  &-overlay
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background-color: #000
-    opacity: 0
-    transition: 0.9s all ease
+    &__text
+      font-size: 18px
+      line-height: 25px
+      max-width: 400px
+    &__image
+      max-width: 100%
+      max-height: 100%
+      transition: 0.3s all ease
+    &-overlay
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: #000
+      opacity: 0
+      transition: 0.9s all ease
 
-.expectation-slider .slick-list
+.big-slider .slick-list
   overflow: hidden
-.expectation-slider .slick-track
+.big-slider .slick-track
   display: flex
   align-items: center
-.expectation-slider .slick-slide
+.big-slider .slick-slide
   margin: 0 15px
-.expectation-slider__item.slick-center
+.big-slider__item.slick-center
   max-height: 520px
-.expectation-slider__item.slick-center .expectation-overlay
+.big-slider__item.slick-center .big-slider-overlay
   opacity: 0.50
-.expectation-slider__item.slick-center .expectation-slider__text-block
+.big-slider__item.slick-center .big-slider__text-block
   opacity: 1
 @media(min-width: 600px)
-  .expectation-slider .slick-track
+  .big-slider .slick-track
     min-height: 520px
 @media(max-width: 600px)
-  .expectation
+  .big
     &-slider
       &__item
         max-width: 400px
         max-height: 250px
 @media(max-width: 480px)
-  .expectation
+  .big
     &-slider
-      padding-top: 40px
+      padding-top: 30px
       &__item
         max-width: 350px
         max-height: 250px
       &__title
         font-size: 18px
         max-width: 280px
-    &__text
-      font-size: 15px
-      max-width: 250px
-      line-height: 20px
+      &__text
+        font-size: 15px
+        max-width: 250px
+        line-height: 20px
