@@ -1,5 +1,6 @@
 .expectation
   position: relative
+  padding-bottom: 0
   &-bg-color
     position: absolute
     top: 0
@@ -77,6 +78,9 @@
   opacity: 0.50
 .expectation-slider__item.slick-center .expectation-slider__text-block
   opacity: 1
+@media(min-width: 600px)
+  .expectation-slider .slick-track
+    min-height: 520px
 @media(max-width: 600px)
   .expectation
     &-slider
