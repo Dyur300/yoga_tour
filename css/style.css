@@ -900,6 +900,20 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 910px) {
+  .big-slider {
+    margin: -50px auto -50px auto;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .big-slider {
+    margin: -100px auto -100px auto;
+    padding-bottom: 40px;
+  }
+}
+
 @media (max-width: 600px) {
   .big-slider__item {
     max-width: 400px;
@@ -991,6 +1005,238 @@ body {
 @media (max-width: 512px) {
   .schedule__item {
     max-width: 300px;
+  }
+}
+
+.ayurveda {
+  line-height: 1.3;
+}
+
+.ayurveda__definition {
+  padding: 60px 0;
+  text-align: center;
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .ayurveda__definition {
+    padding: 40px 0;
+    text-align: left;
+  }
+}
+
+.ayurveda-programme__title {
+  font-family: 'Muller Medium', sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+
+.ayurveda-programme-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px 0;
+}
+
+.ayurveda-programme__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.ayurveda-programme__image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.ayurveda-programme__description {
+  font-size: 18px;
+  padding-left: 40px;
+  max-width: 460px;
+}
+
+@media (max-width: 480px) {
+  .ayurveda-programme__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .ayurveda-programme__description {
+    padding-left: 0;
+    text-align: center;
+  }
+  .ayurveda-programme__image-box {
+    margin-bottom: 25px;
+  }
+}
+
+.ayurveda-center {
+  padding: 30px 0 0 20px;
+  position: relative;
+}
+
+.ayurveda-center-bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f8f2e4;
+  width: 70%;
+  height: 40%;
+  z-index: -1;
+}
+
+.ayurveda-center-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ayurveda-center__images {
+  display: fle;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.ayurveda-center__image-box {
+  display: inline-block;
+  float: left;
+  max-width: 140px;
+  max-height: 140px;
+  overflow: hidden;
+  margin: 0 10px 20px 10px;
+}
+
+.ayurveda-center__body {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.ayurveda-center__title {
+  font-family: 'Muller Medium', sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.ayurveda-center__adress {
+  font-size: 14px;
+  color: #4b4b4b;
+}
+
+.ayurveda-center__description {
+  padding: 20px 0 30px 0;
+}
+
+.ayurveda-center__services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 250px;
+}
+
+.ayurveda-center__services-item {
+  display: inline-block;
+  font-size: 12px;
+  color: #454545;
+  max-width: 210px;
+  padding-left: 25px;
+  background: url("../img/ayurveda/icon.png") no-repeat top left;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .ayurveda-center {
+    padding: 20px 0 0 0px;
+  }
+  .ayurveda-center-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ayurveda-center__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .ayurveda-center__body {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  .ayurveda-center__services-item {
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px) {
+  .ayurveda-center__body {
+    text-align: left;
+  }
+  .ayurveda-center__services {
+    max-height: 100%;
+  }
+  .ayurveda-center__services-item {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .ayurveda-center__image-box {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .ayurveda-center__image {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media (max-width: 310px) {
+  .ayurveda-center__image-box {
+    max-width: 100px;
+    max-height: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
