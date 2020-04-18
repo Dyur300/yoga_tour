@@ -1,5 +1,19 @@
 @font-face {
   font-family: 'Muller';
+  src: local('Muller Light'), local('Muller-Light'),
+      url('../fonts/MullerLight.woff2') format('woff2'),
+      url('../fonts/MullerLight.woff') format('woff'),
+      url('../fonts/MullerLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+  @mixin light {
+    font-family: 'Muller', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+@font-face {
+  font-family: 'Muller';
   src: local('Muller Light Italic'), local('Muller-Light-Italic'),
       url('../fonts/MullerLightItalic.woff2') format('woff2'),
       url('../fonts/MullerLightItalic.woff') format('woff'),

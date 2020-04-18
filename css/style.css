@@ -343,6 +343,13 @@ template {
 
 @font-face {
   font-family: 'Muller';
+  src: local("Muller Light"), local("Muller-Light"), url("../fonts/MullerLight.woff2") format("woff2"), url("../fonts/MullerLight.woff") format("woff"), url("../fonts/MullerLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
   src: local("Muller Light Italic"), local("Muller-Light-Italic"), url("../fonts/MullerLightItalic.woff2") format("woff2"), url("../fonts/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
@@ -1237,6 +1244,181 @@ body {
   .ayurveda-center__image-box {
     max-width: 100px;
     max-height: 100px;
+  }
+}
+
+.coach {
+  background-color: #f8f2e4;
+}
+
+.coach-slider {
+  padding-top: 70px;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.coach-slider-two {
+  padding-top: 20px;
+}
+
+.coach-slider__item {
+  position: relative;
+  max-width: 940px;
+  margin: 0 5px;
+}
+
+.coach-slider__image {
+  width: 100%;
+  height: 100%;
+}
+
+.coach-slider__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 175px;
+  width: 100%;
+  background-color: #00000070;
+  color: #fff;
+}
+
+.coach-slider__name {
+  font-family: 'Muller Bold', sans-serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.coach-slider__subtitle {
+  font-family: 'Muller', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.coach-slider__description {
+  font-family: 'Muller', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  max-width: 510px;
+  line-height: 20px;
+  border-left: 2px solid #fff;
+  padding-left: 50px;
+}
+
+.coach-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coach-slider .slick-list {
+  overflow: hidden;
+}
+
+.coach-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: -7px;
+  right: 15px;
+}
+
+.coach-slider .slick-dots li {
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.coach-slider .slick-dots .slick-active {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.coach-slider .slick-dots button {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .coach-slider__text-block {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .coach-slider {
+    padding-top: 50px;
+  }
+  .coach-slider-two {
+    padding-top: 20px;
+  }
+  .coach-slider__text-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+  }
+  .coach-slider__text-group {
+    width: 100%;
+    display: fle;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .coach-slider__description {
+    width: 100%;
+    border: none;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .coach {
+    overflow: hidden;
+  }
+  .coach-slider {
+    margin: 0 -20px;
+  }
+  .coach-slider__item {
+    min-height: 400px;
+    overflow: hidden;
+  }
+  .coach-slider__image {
+    width: 200%;
+    margin-left: -50%;
+  }
+  .coach-slider__name {
+    font-size: 25px;
+  }
+  .coach-slider__subtitle {
+    font-size: 14px;
+  }
+  .coach-slider__description {
+    width: 100%;
+    border: none;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

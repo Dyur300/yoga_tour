@@ -25,4 +25,8 @@ $(document).ready(function(){
   },
   ],
   });
+  $('.coach-slider').slick({
+    arrows: false,
+    dots: true,
+  })
 });
