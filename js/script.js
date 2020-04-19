@@ -28,5 +28,10 @@ $(document).ready(function(){
   $('.coach-slider').slick({
     arrows: false,
     dots: true,
-  })
+  });
+  $('.reviews-slider').slick({
+    arrows: true,
+    dots: true,
+    infiniti: true,
+  });
 });

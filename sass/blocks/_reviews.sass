@@ -1,0 +1,97 @@
+.reviews-slider
+  position: relative
+  max-width: 940px
+  margin: 0 auto
+  padding-top: 75px
+  &__item
+    display: flex
+    align-items: center
+    margin: 0 auto
+  &__image-box
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    overflow: hidden
+    flex-shrink: 0
+  &__image
+    margin-left: -50px
+    margin-top: -30px
+  &__body
+    padding-left: 40px
+  &__name
+    font-size: 18px
+  &__link 
+    +light
+    display: inline-block
+    margin: 8px 0 10px 0
+    color: #c94410
+    font-sexi: 12px
+  &__text
+    font-size: 14px
+    max-width: 605px
+    font-style: italic
+.reviews-slider .slick-list
+  overflow: hidden
+.reviews-slider .slick-track
+  display: flex
+.reviews-slider .slick-dots
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 14px
+  padding-left: 0
+  padding-top: 25px
+.reviews-slider .slick-dots li 
+  list-style: none
+  background-color: #b4b4b4
+  width: 6px 
+  height: 6px
+  border-radius: 50%
+  margin: 0 7px
+  transition: .3s all ease
+.reviews-slider .slick-dots .slick-active
+  width: 10px 
+  height: 10px
+  background-color: transparent
+  border: 2px solid #b4b4b4
+.reviews-slider .slick-dots button
+  display: none
+
+.reviews-slider .slick-arrow
+  position: absolute
+  top: 50%
+  margin-top: -25px
+  font-size: 0
+  width: 15px 
+  height: 25px
+  background-color: transparent
+  border: none
+  z-index: 1
+  &:focus
+    outline: none
+.reviews-slider .slick-arrow.slick-prev
+  left: 0
+  background: url('../img/reviews/Arrow-Left-icon.png') center no-repeat
+  background-size: 100%
+.reviews-slider .slick-arrow.slick-next
+  right: 0
+  background: url('../img/reviews/Arrow-Right-icon.png') center no-repeat
+  background-size: 100%
+
+@media(max-width: 768px)
+  .reviews-slider
+    padding-top: 50px
+    &__item
+      flex-wrap: wrap
+      justify-content: center
+      text-align: center
+    &__image-box
+      margin-bottom: 25px
+    &__body
+      padding-left: 0
+.reviews-slider .slick-arrow
+  margin-top: -25px
+  width: 30px 
+  height: 40px
+.reviews-slider .slick-dots
+  padding-top: 0px
