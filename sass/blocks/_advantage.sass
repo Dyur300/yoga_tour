@@ -1,0 +1,36 @@
+.advantage
+  padding-bottom: 25px
+  background-color: $section-bg-color
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 70px
+  &-item
+    flex-basis: 33.333%
+    text-align: center
+    padding: 0 50px
+  &__item
+    margin-bottom: 55px
+  &__subtitle
+    +bold
+    font-size: 18px
+    margin-bottom: 10px
+  &__text
+    +light
+    font-size: 16px
+    min-width: 200px
+@media(max-width: 647px)
+  .advantage
+    padding-bottom: 50px
+    &-wrap
+      padding-top: 50px
+    &-item
+      flex-basis: 100%
+      padding: 0 0
+      &:last-child
+        margin-bottom: 0
+    &__text
+      max-width: 300px
+      margin: 0 auto
+      
